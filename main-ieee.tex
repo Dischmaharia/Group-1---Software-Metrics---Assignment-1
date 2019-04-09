@@ -1,0 +1,176 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\usepackage[
+        sortcites=false,            % Don't sort cites if there are multiple simultaneously
+        natbib=true,                % Add some options
+        style=ieee,      % Base style
+        backend=biber,              % Default back-end
+        maxbibnames=3,             % Number of authors displayed (99=all) in the references
+        giveninits=true,            % Put the initials ?
+        uniquename=false,           % No disambiguation on authors names
+        uniquelist=true,            % With "et al.", add the second author name if needed
+        % maxcitenames=2,             % Number of authors displayed in the citations
+        parentracker=true,          % Keep track of nested parenthesis ?
+        url=false,                  % Print the URLs ?
+        doi=false,                  % Print the DOIs ?
+        isbn=true,                 % Print the ISBNs ?
+        eprint=false,               % Print the URLs ?
+        backref=true,               % Enable going back through links in the reference section ?
+        ]{biblatex}             % Bibliography
+\addbibresource{references.bib}
+\usepackage{csquotes}
+\begin{document}
+
+
+\title{PA2552 Software Metrics - Assignment 1}
+
+\author{
+    \IEEEauthorblockN{Claudio Bertozzi}
+    \IEEEauthorblockA{\textit{clbt18@student.bth.se} \\
+    \textit{930206T578}
+    }
+    \and
+    \IEEEauthorblockN{Given Name Surname}
+    \IEEEauthorblockA{\textit{bth mail} \\
+    \textit{personal number)}
+    }
+    \and
+    \IEEEauthorblockN{Given Name Surname}
+    \IEEEauthorblockA{\textit{bth mail} \\
+    \textit{personal number)}
+    }
+    \and
+    \IEEEauthorblockN{Given Name Surname}
+    \IEEEauthorblockA{\textit{bth mail} \\
+    \textit{personal number)}
+    }
+}
+
+\maketitle
+
+\begin{abstract}
+In this document, group 1 from the software metrics course at BTH provides their answer for the first assignment.
+\end{abstract}
+
+
+\section{Introduction}
+The goal of this assignment is to get familiar with different OO metrics and the tools and methods used for them. Therefore, we have worked on two parts. First, we selected 10 different software metrics researches, which we analysed. The findings are provided in part one. Secondly, we chose a open source project, on which we extracted various code metrics using two different tools. Our experiences and some results are reported in part 2.
+
+
+\section{Part 1}
+First we provide the summary's for the 10 different software metrics studies regarding four different metrics.
+
+\subsection{Cohesion}
+First three studies about cohesion.\\
+
+\subsubsection{Towards a valid metric for class cohesion at design level}\cite{s118_cohision}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+
+\subsection{Maintainability}
+Then three studies about maintainability.\\
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsection{Coupling}
+Also three studies about coupling.\\
+
+\subsubsection{Empirical investigation into static and dynamic coupling metrics}\cite{s88_coupling}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsection{Understandability}
+And finally one study about understandability.\\
+
+\subsubsection{...}\cite{...}\\
+Summary
+
+\subsection{Findings from the papers}
+What we could identifz be analysing the papers.
+
+\subsubsection{Various OO metrics}\\
+
+\subsubsection{Types of system}\\
+
+\subsubsection{Metrics extraction tools}\\
+
+\subsubsection{Methods to visualise extracted metrics}\\
+Examples: Histograms, bar charts, etc.
+
+\subsubsection{Statistical measures}\\
+Examples: Mean, median, standard deviation, etc.
+
+
+\section{Latex formation examples}
+
+
+\cite{softwaremetricsandsoftwaremetrology_2010}
+
+\cite{5609739}
+\cite{6269563}
+\cite{5609687}
+
+
+\begin{itemize}
+\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
+\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
+\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
+\end{itemize}
+
+\begin{table}[htbp]
+\caption{Table Type Styles}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+\cline{2-4} 
+\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+\hline
+copy& More table copy$^{\mathrm{a}}$& &  \\
+\hline
+\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+% \centerline{\includegraphics{fig1.png}}
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+
+
+\section{Part 2}
+
+
+Here comes part 2.
+
+\printbibliography
+
+\end{document}
